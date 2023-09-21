@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <label><h1>Casa de cambio</h1></label>
+
+        <form>
+            <label><h2>Seleccionar moneda a enviar:</h2></label>
+                <input type="radio" name="opcion" value="USD" id="USD">
+                <label for="USD" class="radio-custom"> Dólar</label>
+    
+                <input type="radio" name="opcion" value="EUR" id="EUR">
+                <label for="EUR" class="radio-custom"> Euro</label>
+    
+                <input type="radio" name="opcion" value="PEN" id="PEN">
+                <label for="PEN" class="radio-custom"> Soles</label>            
+            <br>
+            <label for="monto"><h2>Ingrese monto:</h2></label>
+
+            <input class="input-custom" type="number" name="monto" id="monto"> <br><br>
+            <select class="select-custom" name="from" id="target-select">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="PEN">PEN</option>
+            </select>   
+            <input type="number" id="resultado">
+            <input class="btn-custom" type="submit" value="Cotizar" id="cotizar-btn">      
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>         
+</html>
